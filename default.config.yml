@@ -2,8 +2,8 @@
 downloads: ~/.ansible-downloads/
 
 configure_dotfiles: no
-configure_sudoers: yes
-configure_terminal: yes
+configure_sudoers: no
+configure_terminal: no
 configure_osx: yes
 
 dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
@@ -48,7 +48,8 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
-  # - homebrew/php
+  - neovim/neovim
+  - caskroom/fonts
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -56,6 +57,7 @@ homebrew_cask_apps:
   - dropbox
   # - fing # Download link keeps getting changed, d'oh!
   - firefox
+  - font-hack-nerd-font
   - google-chrome
   - handbrake
   - istat-menus
