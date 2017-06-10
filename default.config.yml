@@ -1,7 +1,7 @@
 ---
 downloads: ~/.ansible-downloads/
 
-configure_dotfiles: yes
+configure_dotfiles: no
 configure_sudoers: yes
 configure_terminal: yes
 configure_osx: yes
@@ -33,6 +33,7 @@ homebrew_installed_packages:
   - libevent
   - sqlite
   - mcrypt
+  - neovim
   - nmap
   - node
   - nvm
@@ -47,7 +48,7 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
-  - homebrew/php
+  # - homebrew/php
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -57,6 +58,8 @@ homebrew_cask_apps:
   - firefox
   - google-chrome
   - handbrake
+  - istat-menus
+  - iterm2
   - licecap
   - limechat
   - macvim
@@ -64,7 +67,8 @@ homebrew_cask_apps:
   - sequel-pro
   - skitch
   - slack
-  - sublime-text
+  - spectacle
+  - spotify
   - transmit
   - vagrant
   - virtualbox

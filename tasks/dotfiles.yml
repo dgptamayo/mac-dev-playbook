@@ -1,0 +1,8 @@
+---
+- name: clone my dotfile repo
+  git:
+    repo: https://github.com/dgptamayo/dotfiles.git
+    dest: "{{ ansible_env.HOME }}"
+
+- name: run the dotfile setup script
+  shell: "{{ ansible_env.HOME }}/.dotfiles/install.sh"
